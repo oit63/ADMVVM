@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="___FILEBASENAMEASIDENTIFIER___">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0hK-Pt-S8j">
+                    <rect key="frame" x="104" y="228" width="112" height="112"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="112" id="Dpv-g1-mNp"/>
+                        <constraint firstAttribute="height" constant="112" id="Z4w-eo-Umz"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoE-Ch-1fD">
+                    <rect key="frame" x="104" y="228" width="112" height="112"/>
+                    <connections>
+                        <action selector="BtnASwitch:" destination="iN0-l3-epB" eventType="touchUpInside" id="b2M-fJ-iVx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uoE-Ch-1fD" firstAttribute="width" secondItem="0hK-Pt-S8j" secondAttribute="width" id="A1n-dC-pXX"/>
+                <constraint firstItem="uoE-Ch-1fD" firstAttribute="centerX" secondItem="0hK-Pt-S8j" secondAttribute="centerX" id="FPp-h2-G5C"/>
+                <constraint firstItem="0hK-Pt-S8j" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="G5f-MF-fDs"/>
+                <constraint firstItem="0hK-Pt-S8j" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ezj-WZ-vJX"/>
+                <constraint firstItem="uoE-Ch-1fD" firstAttribute="centerY" secondItem="0hK-Pt-S8j" secondAttribute="centerY" id="gVe-54-dnH"/>
+                <constraint firstItem="uoE-Ch-1fD" firstAttribute="height" secondItem="0hK-Pt-S8j" secondAttribute="height" id="mIr-Sb-8Wg"/>
+            </constraints>
+            <connections>
+                <outlet property="btnA" destination="uoE-Ch-1fD" id="3A7-xh-DlO"/>
+                <outlet property="bulb01" destination="0hK-Pt-S8j" id="yAF-Sl-ami"/>
+            </connections>
+            <point key="canvasLocation" x="159" y="174"/>
+        </view>
+        <customObject id="gSR-cY-gSx">
+            <connections>
+                <outletCollection property="bulb000100Targets" destination="0hK-Pt-S8j" id="TBg-eM-GAl"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>
